@@ -1,0 +1,220 @@
+const products = [
+  {
+    id: 1,
+    name: 'Ginjal',
+    image: '/products/ginjal.png',
+    group: 'ORGAN VITAL',
+    category: 'ORGAN VITAL',
+    description: 'Organ vital dengan fungsi utama filtrasi darah dan pengaturan keseimbangan cairan tubuh.',
+    status: 'Prapesan',
+    price: 125000000,
+    estimate: '14–21 hari',
+    popular: true
+  },
+  {
+    id: 2,
+    name: 'Hati',
+    image: '/products/hati.png',
+    group: 'ORGAN VITAL',
+    category: 'ORGAN VITAL',
+    description: 'Organ metabolik utama yang berperan dalam detoksifikasi, metabolisme, dan produksi protein.',
+    status: 'Prapesan',
+    price: 175000000,
+    estimate: '21–30 hari',
+    popular: true
+  },
+  {
+    id: 3,
+    name: 'Jantung',
+    image: '/products/jantung.jpg',
+    group: 'ORGAN VITAL',
+    category: 'ORGAN VITAL',
+    description: 'Organ pemompa darah yang mempertahankan sirkulasi ke seluruh jaringan tubuh.',
+    status: 'Prapesan',
+    price: 250000000,
+    estimate: '21–30 hari',
+    popular: true
+  },
+  {
+    id: 4,
+    name: 'Paru-Paru',
+    image: '/products/paru-paru.png',
+    group: 'ORGAN VITAL',
+    category: 'ORGAN VITAL',
+    description: 'Organ respirasi yang bertanggung jawab terhadap pertukaran oksigen dan karbon dioksida.',
+    status: 'Prapesan',
+    price: 200000000,
+    estimate: '21–30 hari',
+    popular: true
+  },
+  {
+    id: 5,
+    name: 'Pankreas',
+    image: '/products/pankreas.png',
+    group: 'ORGAN VITAL',
+    category: 'ORGAN VITAL',
+    description: 'Organ yang berperan dalam produksi hormon dan enzim pencernaan.',
+    status: 'Prapesan',
+    price: 110000000,
+    estimate: '14–21 hari'
+  },
+  {
+    id: 6,
+    name: 'Usus',
+    image: '/products/usus.jpg',
+    group: 'ORGAN VITAL',
+    category: 'ORGAN VITAL',
+    description: 'Bagian sistem pencernaan yang berperan dalam penyerapan nutrisi dan pengolahan makanan.',
+    status: 'Prapesan',
+    price: 95000000,
+    estimate: '14–21 hari'
+  },
+  {
+    id: 7,
+    name: 'Kornea Mata',
+    image: '/products/kornea.jpg',
+    group: 'JARINGAN TUBUH',
+    category: 'JARINGAN TUBUH',
+    description: 'Jaringan transparan pada bagian depan mata yang berperan penting dalam fokus penglihatan.',
+    status: 'Prapesan',
+    price: 35000000,
+    estimate: '7–14 hari',
+    popular: true
+  },
+  {
+    id: 8,
+    name: 'Kulit',
+    image: '/products/kulit.jpg',
+    group: 'JARINGAN TUBUH',
+    category: 'JARINGAN TUBUH',
+    description: 'Jaringan pelindung terluar tubuh yang berfungsi sebagai penghalang terhadap lingkungan.',
+    status: 'Prapesan',
+    price: 45000000,
+    estimate: '7–14 hari'
+  },
+  {
+    id: 9,
+    name: 'Tulang',
+    image: '/products/tulang.png',
+    group: 'JARINGAN TUBUH',
+    category: 'JARINGAN TUBUH',
+    description: 'Jaringan struktural yang memberikan dukungan, perlindungan, dan membantu pergerakan tubuh.',
+    status: 'Prapesan',
+    price: 60000000,
+    estimate: '14–21 hari'
+  },
+  {
+    id: 10,
+    name: 'Tendon dan Ligamen',
+    image: '/products/tendonligamen.png',
+    group: 'JARINGAN TUBUH',
+    category: 'JARINGAN TUBUH',
+    description: 'Jaringan ikat yang menghubungkan otot dengan tulang serta tulang dengan tulang.',
+    status: 'Prapesan',
+    price: 55000000,
+    estimate: '14–21 hari'
+  },
+  {
+    id: 11,
+    name: 'Katup Jantung',
+    image: '/products/katup.png',
+    group: 'JARINGAN TUBUH',
+    category: 'JARINGAN TUBUH',
+    description: 'Struktur jaringan yang membantu menjaga aliran darah tetap bergerak dalam satu arah.',
+    status: 'Prapesan',
+    price: 40000000,
+    estimate: '14–21 hari'
+  },
+  {
+    id: 12,
+    name: 'Pembuluh Darah',
+    image: '/products/pembuluh.jpg',
+    group: 'JARINGAN TUBUH',
+    category: 'JARINGAN TUBUH',
+    description: 'Saluran yang mengedarkan darah dari dan menuju berbagai bagian tubuh.',
+    status: 'Prapesan',
+    price: 30000000,
+    estimate: '7–14 hari'
+  },
+  {
+    id: 13,
+    name: 'Sumsum Tulang dan Sel Punca',
+    image: '/products/sumsum.png',
+    group: 'SEL & CAIRAN',
+    category: 'SEL & CAIRAN',
+    description: 'Sumber sel pembentuk darah dan sel punca yang memiliki kemampuan diferensiasi.',
+    status: 'Prapesan',
+    price: 85000000,
+    estimate: '14–21 hari',
+    popular: true
+  },
+  {
+    id: 14,
+    name: 'Darah dan Trombosit',
+    image: '/products/darahtrombosit.jpg',
+    group: 'SEL & CAIRAN',
+    category: 'SEL & CAIRAN',
+    description: 'Komponen darah yang berperan dalam transportasi, pertahanan tubuh, dan pembekuan.',
+    status: 'Prapesan',
+    price: 15000000,
+    estimate: '7–14 hari'
+  },
+  {
+    id: 15,
+    name: 'Darah Tali Pusat',
+    image: '/products/darahtali.jpg',
+    group: 'SEL & CAIRAN',
+    category: 'SEL & CAIRAN',
+    description: 'Sumber sel punca hematopoietik yang berasal dari darah tali pusat.',
+    status: 'Prapesan',
+    price: 25000000,
+    estimate: '7–14 hari'
+  },
+  {
+    id: 16,
+    name: 'Transplantasi Wajah',
+    image: '/products/wajah.jpg',
+    group: 'TRANSPLANTASI KOMPOSIT',
+    category: 'TRANSPLANTASI KOMPOSIT',
+    description: 'Prosedur transplantasi kompleks yang melibatkan berbagai jaringan wajah.',
+    status: 'Prapesan',
+    price: 450000000,
+    estimate: '30–45 hari'
+  },
+  {
+    id: 17,
+    name: 'Tangan atau Lengan',
+    image: '/products/tangan.jpg',
+    group: 'TRANSPLANTASI KOMPOSIT',
+    category: 'TRANSPLANTASI KOMPOSIT',
+    description: 'Transplantasi komposit yang mencakup tulang, otot, saraf, pembuluh darah, dan jaringan terkait.',
+    status: 'Prapesan',
+    price: 350000000,
+    estimate: '30–45 hari'
+  },
+  {
+    id: 18,
+    name: 'Rahim',
+    image: '/products/rahim.jpg',
+    group: 'TRANSPLANTASI KOMPOSIT',
+    category: 'TRANSPLANTASI KOMPOSIT',
+    description: 'Organ reproduksi yang menjadi bagian dari prosedur transplantasi organ kompleks.',
+    status: 'Prapesan',
+    price: 275000000,
+    estimate: '30–45 hari'
+  },
+  {
+    id: 19,
+    name: 'Otak',
+    image: '/products/otak.png',
+    group: 'SISTEM NEURAL',
+    category: 'SISTEM NEURAL',
+    description: 'Organ utama sistem saraf pusat yang mengatur berbagai fungsi tubuh dan proses kognitif.',
+    status: 'Prapesan',
+    price: 500000000,
+    estimate: '45–60 hari',
+    popular: true
+  }
+]
+
+export { products }
